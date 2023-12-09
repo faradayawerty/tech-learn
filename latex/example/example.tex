@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+
+\author{Михаил Фарадей}
+\title{Мой первый документ в {\LaTeX}}
+
+
+\begin{document}
+
+	\begin{titlepage}
+		\maketitle
+	\end{titlepage}
+
+	\section{Вступление}
+		Какой-то текст.
+		Ещё текст.
+		И ещё текст.
+		\newline
+		Новая строка.
+
+	\section{Пронумерованный список}
+
+	\section{Форматирование}
+		Это обычный текст.
+		\textbf{Это жирный текст.}
+		\textit{Это курсив.}
+		\underline{Подчеркнутый текст.}
+		\newline
+		\emph{Это какой-то важный текст. Сейчас он курсивный, но это можно изменить.}
+		\newline
+		``Текст в кавычках.''
+
+	\section{Математика}
+		\begin{equation*}
+			\cos(2x) = \cos^2 x - \sin^2 x
+		\end{equation*}
+
+		\begin{equation*}
+			\lim\limits_{n \to \infty} {a_n} = a
+			\iff
+			(\forall \epsilon > 0)
+			(\exists n_0 \in \mathbb{N})
+			(\forall n \geq n_0)
+			[|a_n - a| < \epsilon]
+		\end{equation*}
+
+\end{document}
+
